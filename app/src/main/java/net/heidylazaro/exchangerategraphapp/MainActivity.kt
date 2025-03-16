@@ -21,9 +21,9 @@ class MainActivity : ComponentActivity() {
             ExchangeRateChartScreen(
                 exchangeRates = exchangeRates.value,
                 onLoadData = {
-                    val currency = "USD"
-                    val startDate = "2025-03-10"
-                    val endDate = "2025-03-16"
+                   /* val startDate = "2025-03-11"
+                    val endDate = "2025-03-16"*/
+                    currency, startDate, endDate ->
                     viewModel.fetchExchangeRates(currency, startDate, endDate)
                 }
             )
